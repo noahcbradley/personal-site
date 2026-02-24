@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /c/Users/NoahBradley/code/personal-site && npm install 2>&1)",
+      "Bash(cd /c/Users/NoahBradley/code/personal-site && npm run build 2>&1)",
+      "Bash(cd /c/Users/NoahBradley/code/personal-site && npm install -D @types/node 2>&1)",
+      "Bash(cd /c/Users/NoahBradley/code/personal-site && python -c \"\nimport zipfile, xml.etree.ElementTree as ET\nz = zipfile.ZipFile\\('Noah_Bradley_Resume_2026.docx'\\)\ntree = ET.parse\\(z.open\\('word/document.xml'\\)\\)\nfor p in tree.iter\\('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}p'\\):\n    texts = [t.text for t in p.iter\\('{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t'\\) if t.text]\n    if texts:\n        print\\(''.join\\(texts\\)\\)\n\" 2>&1)"
+    ]
+  }
+}

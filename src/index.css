@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base styles for dark mode */
+body {
+  @apply bg-dark-500 text-white antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-500;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-white/10;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-white/20;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-accent/30 text-white;
+}
