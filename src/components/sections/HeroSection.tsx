@@ -47,6 +47,13 @@ export function HeroSection() {
       />
 
       <div className="relative z-10 animate-fade-in">
+        {/* Headshot */}
+        <img
+          src="/headshot.jpg"
+          alt={siteConfig.name}
+          className="mx-auto mb-8 h-52 w-52 rounded-full border-2 border-accent/30 object-cover shadow-lg shadow-accent/10"
+        />
+
         <p className="mb-4 font-mono text-sm text-accent md:text-base">
           Hello world, I&apos;m
         </p>
