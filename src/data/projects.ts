@@ -17,6 +17,7 @@ export const projects: Project[] = [
       "A web scraper application that connects with ESPN's fantasy hockey league to cross-reference and identify the best available players.",
     techTags: ["Python", "Web Scraping", "ESPN API"],
     githubUrl: "https://github.com/noahcbradley/fantasy_hockey",
+    liveUrl: "https://fantasyhockey-frontend-production.up.railway.app/",
   },
   {
     id: "3",
